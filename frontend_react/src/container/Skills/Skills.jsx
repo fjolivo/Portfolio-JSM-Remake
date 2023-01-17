@@ -9,6 +9,8 @@ import { AppWrap } from '../../wrapper';
 import { urlFor, client } from '../../client';
 import './Skills.scss';
 
+import 'react-tooltip/dist/react-tooltip.css'
+
 const Skills = () => {
   const [experiences, setExperiences] = useState([]);
   const [skills, setSkills] = useState([]);
@@ -68,18 +70,23 @@ const Skills = () => {
                       data-tip
                       data-for={work.name}
                       key={work.name}
+
+                      data-tooltip-content={work.desc}
+                      id="custom-inline-styles"
                     >
                       <h4 className="bold-text">{work.name}</h4>
                       <p className="p-text">{work.company}</p>
                     </motion.div>
                     <Tooltip
+                      anchorId="custom-inline-styles"
+
                       id={work.name}
-                      effect="solid"
-                      arrowColor="#fff"
+                      // effect="solid"
+                      // arrowColor="#fff"
                       className="skills-tooltip"
-                    >
-                      {work.desc}
-                    </Tooltip>
+                    />
+                      {/* {work.desc} */}
+                    {/* </Tooltip> */}
                   </>
                 ))}
               </motion.div>
