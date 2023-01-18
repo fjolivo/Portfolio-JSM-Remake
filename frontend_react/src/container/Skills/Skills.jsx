@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 // import ReactTooltip from 'react-tooltip';
 import { Tooltip } from 'react-tooltip';
+import 'react-tooltip/dist/react-tooltip.css';
 
 // import { AppWrap, MotionWrap } from '../../wrapper';
 import { AppWrap } from '../../wrapper';
@@ -9,7 +10,7 @@ import { AppWrap } from '../../wrapper';
 import { urlFor, client } from '../../client';
 import './Skills.scss';
 
-import 'react-tooltip/dist/react-tooltip.css'
+
 
 const Skills = () => {
   const [experiences, setExperiences] = useState([]);
@@ -62,7 +63,9 @@ const Skills = () => {
               </div>
               <motion.div className="app__skills-exp-works">
                 {experience.works.map((work) => (
+                  
                   <>
+
                     <motion.div
                       whileInView={{ opacity: [0, 1] }}
                       transition={{ duration: 0.5 }}
@@ -70,23 +73,23 @@ const Skills = () => {
                       data-tip
                       data-for={work.name}
                       key={work.name}
-
-                      data-tooltip-content={work.desc}
-                      id="custom-inline-styles"
+                       data-tooltip-content={work.desc}
+                      id="custom-inline-styles" 
                     >
                       <h4 className="bold-text">{work.name}</h4>
                       <p className="p-text">{work.company}</p>
                     </motion.div>
+
                     <Tooltip
                       anchorId="custom-inline-styles"
-
-                      id={work.name}
+                      // id={work.name}
                       // effect="solid"
-                      // arrowColor="#fff"
+                      // arrowColor="#000"
                       className="skills-tooltip"
-                    />
-                      {/* {work.desc} */}
-                    {/* </Tooltip> */}
+                      // content={work.desc}
+                    >
+                    </Tooltip>
+                                      
                   </>
                 ))}
               </motion.div>
