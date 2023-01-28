@@ -46,7 +46,7 @@ import 'react-tooltip/dist/react-tooltip.css';
 
 class StarrySky extends React.Component {
   state = {
-    num: 60,
+    num: 18,
     vw: Math.max(document.documentElement.clientWidth, window.innerWidth || 0),
     vh: Math.max(document.documentElement.clientHeight, window.innerHeight || 0)
   };
@@ -65,7 +65,7 @@ class StarrySky extends React.Component {
       ],
       easing: "linear",
       loop: true,
-      delay: (el, i) => 50 * i
+      delay: (el, i) => 500 * i
     });
   };
   shootingStars = () => {
@@ -73,16 +73,16 @@ class StarrySky extends React.Component {
       targets: ["#shootingstars .wish"],
       easing: "linear",
       loop: true,
-      delay: (el, i) => 1000 * i,
+      delay: (el, i) => 6000 * i,
       opacity: [
         {
-          duration: 700,
+          duration: 600,
           value: "1"
         }
       ],
       width: [
         {
-          value: "150px"
+          value: "60px"
         },
         {
           value: "0px"
