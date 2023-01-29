@@ -1,6 +1,6 @@
 export default{
-    name:'abouts',
-    title:'Abouts',
+    name:'skills',
+    title:'Skills',
     type: 'document',
     fields:[
         {
