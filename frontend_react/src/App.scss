@@ -65,11 +65,11 @@
     }
   
     @media screen and (min-width: 2000px) {
-      font-size: 4rem;
+      font-size: 6.5rem;
     }
   
     @media screen and (max-width: 450px) {
-      font-size: 2rem;
+      font-size: 2.5rem;
     }
   }
 
@@ -130,6 +130,21 @@
     }
   }
   
+  .bold-text-work {
+    font-size: 1.2rem;
+    font-weight: 800;
+    color: var(--brown-color);
+    text-align: center;
+  
+    @media screen and (min-width: 2000px) {
+      font-size: 2rem;
+    }
+  
+    @media screen and (max-width: 450px) {
+      font-size: 0.9rem;
+    }
+  }
+
   .app__social {
     display: flex;
     justify-content: flex-end;
