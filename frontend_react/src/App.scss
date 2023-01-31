@@ -145,6 +145,17 @@
       font-size: 4rem;
     }
   }
+
+  .p-text3 {
+    font-size: 0.8rem;
+    text-align: left;
+    color: var(--black-color2);
+    line-height: 1.5;
+  
+    @media screen and (min-width: 2000px) {
+      font-size: 1.75rem;
+    }
+  }
   
   .bold-text {
     font-size: 1rem;
