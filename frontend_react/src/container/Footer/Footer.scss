@@ -45,7 +45,7 @@
         font-weight: 500;
       }
       &:hover {
-        box-shadow: 0 0 25px #fef4f5;
+        box-shadow: 0 0 75px #fef4f5;
       }
   
       @media screen and (max-width: 450px) {
@@ -109,8 +109,8 @@
       border: none;
       background-color: var(--secondary-color);
   
-      font-weight: 500;
-      color: var(--white-color);
+      font-weight: 800;
+      color: var(--black-color2);
       outline: none;
       margin: 2rem 0 0 0;
       font-family: var(--font-base);
@@ -119,7 +119,10 @@
       cursor: pointer;
   
       &:hover {
-        background-color: #2430af;
+        transition: all 0.3s ease-in-out;
+        // transition-delay: 600ms;
+        background-color: #99ff00;
+        box-shadow: 0 0 70px #fef4f5;
       }
     }
   
