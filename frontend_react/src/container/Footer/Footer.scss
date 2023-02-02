@@ -2,6 +2,7 @@
     flex: 1;
     width: 100%;
     flex-direction: column;
+    padding-top: 3rem;
   
     @media screen and (max-width: 768px) {
       flex-direction: column;
@@ -14,7 +15,7 @@
     justify-content: space-evenly;
     align-items: center;
     flex-wrap: wrap;
-    margin: 4em 2rem 2rem;
+    margin: 3em 4rem 2rem;
   
     .app__footer-card {
       min-width: 290px;
@@ -45,7 +46,7 @@
         font-weight: 500;
       }
       &:hover {
-        box-shadow: 0 0 75px #fef4f5;
+        box-shadow: 0 0 25px #fef4f5;
       }
   
       @media screen and (max-width: 450px) {
@@ -121,7 +122,7 @@
       &:hover {
         transition: all 0.3s ease-in-out;
         // transition-delay: 600ms;
-        background-color: #99ff00;
+        // background-color: #99ff00;
         box-shadow: 0 0 70px #fef4f5;
       }
     }

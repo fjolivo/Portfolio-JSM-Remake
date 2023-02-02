@@ -8,47 +8,47 @@ import { AppWrap, MotionWrap } from '../../wrapper';
 // import { AppWrap } from '../../wrapper';
 
 import { urlFor, client } from '../../client';
-import './Skills.scss';
+import './Timeline.scss';
 
 
 
-const Skills = () => {
+const Timeline = () => {
   const [experiences, setExperiences] = useState([]);
-  const [skills, setSkills] = useState([]);
+  const [timeline, setTimeline] = useState([]);
 
   useEffect(() => {
     const query = '*[_type == "experiences"]';
-    const skillsQuery = '*[_type == "skills"]';
+    const timelineQuery = '*[_type == "timeline"]';
 
     client.fetch(query).then((data) => {
       setExperiences(data);
     });
 
-    client.fetch(skillsQuery).then((data) => {
-      setSkills(data);
+    client.fetch(timelineQuery).then((data) => {
+      setTimeline(data);
     });
   }, []);
 
   return (
     <>
-      <h2 className="head-text">Skills & Experiences</h2>
+      <h2 className="head-text">Timeline</h2>
 
       <div className="app__skills-container">
         <motion.div className="app__skills-list">
-          {skills.map((skill) => (
+          {timeline.map((timeline) => (
             <motion.div
               whileInView={{ opacity: [0, 1] }}
               transition={{ duration: 0.5 }}
               className="app__skills-item app__flex"
-              key={skill.name}
+              key={timeline.name}
             >
               <div
                 className="app__flex"
-                style={{ backgroundColor: skill.bgColor }}
+                style={{ backgroundColor: timeline.bgColor }}
               >
-                <img src={urlFor(skill.icon)} alt={skill.name} />
+                <img src={urlFor(timeline.icon)} alt={timeline.name} />
               </div>
-              <p className="p-text">{skill.name}</p>
+              <p className="p-text">{timeline.name}</p>
             </motion.div>
           ))}
         </motion.div>
@@ -103,7 +103,7 @@ const Skills = () => {
 
 // export default AppWrap(Skills, 'skills')
 export default AppWrap(
-  MotionWrap(Skills, 'app__skills'),
+  MotionWrap(Timeline, 'app__skills'),
   'skills',
   'app__whitebg',
 );
