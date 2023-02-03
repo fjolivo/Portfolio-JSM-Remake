@@ -1,6 +1,6 @@
 export default{
-    name:'skills',
-    title:'Skills',
+    name:'about',
+    title:'About',
     type: 'document',
     fields:[
         {
@@ -14,8 +14,8 @@ export default{
             type:'string'
         },
         {
-            name:'imgUrl',
-            title:'ImgUrl',
+            name:'profileImg',
+            title:'ProfileImg',
             type: 'image',
             options: {
               hotspot: true,

@@ -24,7 +24,7 @@ const Skill = () => {
       setSkills(data);
     });
   }, []);
-
+ 
   return (
     <>
       <h2 className="head-text"><span>Technologies</span> of expertise</h2>
