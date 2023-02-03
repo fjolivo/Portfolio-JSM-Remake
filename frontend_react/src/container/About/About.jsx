@@ -19,28 +19,42 @@ const About = () => {
   }, []);
  
   return (
-    <>
+    <div>
       <h2 className="head-text"><span>About me</span></h2>
 
-
-
       <div className="app__profiles">
-        {about.map((about, index) => (
-          <motion.div
-            whileInView={{ opacity: 1 }}
-            whileHover={{ scale: 1.1 }}
-            transition={{ duration: 0.5, type: 'tween' }}
-            className="app__profile-item"
-            key={about.title + index}
-          >
-            <img src={urlFor(about.profileImg)} alt={about.title} />
 
-            <h2 className="bold-text" style={{ marginTop: 20 }}>{about.title}</h2>
-            <p className="p-text" style={{ marginTop: 10 }}>{about.description}</p>
-          </motion.div>
-        ))};
+
+        <div className="app__profiles">
+          {about.map((about, index) => (
+          
+            <div
+              className="app__profile-item"
+              key={about.title + index}
+            >
+              <img src={urlFor(about.profileImg)} alt={about.title} />
+            </div>
+          ))};
+        </div>
+
+
+        <div className="app__profiles">
+          {about.map((about, index) => (
+          
+            <div
+              className="app__profile-item"
+              key={about.title + index}
+            >
+              {/* <h2 className="bold-text" style={{ marginTop: 20 }}>{about.title}</h2> */}
+              <p className="p-text" style={{ marginTop: 10 }}>{about.description}</p>
+            </div>
+          ))};
+        </div>
       </div>
-    </>
+
+
+
+    </div>
   );
 
 
