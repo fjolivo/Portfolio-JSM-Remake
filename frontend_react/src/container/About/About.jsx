@@ -22,34 +22,30 @@ const About = () => {
     <div>
       <h2 className="head-text"><span>About me</span></h2>
 
-      <div className="app__profiles">
+      <div className="app__about-profile">
 
 
-        <div className="app__profiles">
+        <div className="app__about-profile">
           {about.map((about, index) => (
           
             <div
-              className="app__profile-item"
-              key={about.title + index}
+              className="app__about-item"
+              // key={about.title + index}
             >
               <img src={urlFor(about.profileImg)} alt={about.title} />
+              <div 
+              // className="app__about-desc"
+              >
+              <p className="p-text5" style={{ marginTop: 10 }}>{about.description}</p>
+              </div>
             </div>
           ))};
         </div>
 
 
-        <div className="app__profiles">
-          {about.map((about, index) => (
-          
-            <div
-              className="app__profile-item"
-              key={about.title + index}
-            >
-              {/* <h2 className="bold-text" style={{ marginTop: 20 }}>{about.title}</h2> */}
-              <p className="p-text" style={{ marginTop: 10 }}>{about.description}</p>
-            </div>
-          ))};
-        </div>
+        
+
+        
       </div>
 
 
