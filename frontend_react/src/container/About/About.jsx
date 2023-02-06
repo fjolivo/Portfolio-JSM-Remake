@@ -7,7 +7,6 @@ import { urlFor, client } from '../../client';
 import './About.scss';
 
 const About = () => {
-
   const [about, setAbout] = useState([]);
 
   useEffect(() => {
@@ -19,10 +18,10 @@ const About = () => {
   }, []);
  
   return (
-    <div>
+    <div >
       <h2 className="head-text"><span>About me</span></h2>
 
-      <div className="app__about-profile">
+      <div className="app__about">
 
 
         <div className="app__about-profile">
@@ -30,13 +29,25 @@ const About = () => {
           
             <div
               className="app__about-item"
-              // key={about.title + index}
+              key={about.title + index}
             >
-              <img src={urlFor(about.profileImg)} alt={about.title} />
+              <div>
+                <img src={urlFor(about.profileImg)} alt={about.title} />
+              </div>
               <div 
-              // className="app__about-desc"
+              className="app__about-desc"
               >
-              <p className="p-text5" style={{ marginTop: 10 }}>{about.description}</p>
+              <p 
+                className="p-text5" 
+                style={{ marginTop: 10 }}
+              >
+                {about.description}
+                <br/><br/>
+                {about.description2}
+                <br/><br/>
+                {about.description3}
+              </p>
+
               </div>
             </div>
           ))};

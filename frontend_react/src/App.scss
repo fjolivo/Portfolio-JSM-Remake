@@ -31,10 +31,10 @@
     flex: 1;
     width: 100%;
     flex-direction: column;
-    padding: 4rem 2rem;
+    padding: 4rem 2rem 1rem;
   
     @media screen and (max-width: 450px) {
-      padding: 4rem 1rem 2rem;
+      padding: 4rem 1rem 1rem;
     }
   }
   
@@ -169,7 +169,7 @@
   }
 
   .p-text5 {
-    font-size: 1rem;
+    font-size: 0.9rem;
     text-align: left;
     color: var(--lightGray-color);
     line-height: 1.5;

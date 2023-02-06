@@ -2,17 +2,21 @@
     flex: 1;
     width: 100%;
     flex-direction: column;
-    margin-top: 2rem;
+    margin-top: 1rem;
   }
   
   .app__about-profile {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
+    // position: absolute;
     // flex-wrap: wrap;
     // margin-top: 2rem;
     // width: 100%;
     flex-direction: row;
+
+    
+    // transform: translateY(-50%);
     
     // background-color: aqua;
   }
@@ -35,35 +39,35 @@
     align-items: flex-start;
     flex-direction: row;
     padding: 2rem;
-    width: 100%;
+    // width: 100%;
   
 
 
 
     img {
+        margin-top: 2rem;
+        vertical-align: center;
 
-        // vertical-align: center;
-
-//       width: 100%;
-//       height: 500px;
-//     //   border-radius: 15px;
-//     //   object-fit: cover;
+      width: 350px;
+      height: 600px;
+      border-radius: 15px;
+      object-fit: cover;
 
 
-// // About skill boxes
-// // margin: 4rem;
-// // padding: 1rem;
-// // border-radius: 0.5rem;
-// // background-color: rgba(255, 255, 255, 0.8);
-// color: #000;
-//     }
-  
-//     @media screen and (min-width: 2000px) {
-//       width: 370px;
-//       margin: 2rem 4rem;
-  
-//       img {
-//         height: 320px;
-//       }
+
+// margin: 4rem;
+padding: 1rem;
+border-radius: 0.5rem;
+background-color: rgba(255, 255, 255, 0.8);
+color: #000;
     }
+  
+    // @media screen and (min-width: 2000px) {
+    //   width: 370px;
+    //   margin: 2rem 4rem;
+  
+    //   img {
+    //     height: 320px;
+    //   }
+    // }
   }

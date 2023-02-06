@@ -53,6 +53,6 @@ const Skill = () => {
 // export default AppWrap(About, 'about');
 export default AppWrap(
   MotionWrap(Skill, 'app__skill'),
-  'skill',
+  'skills',
   // 'app__whitebg',
 );
