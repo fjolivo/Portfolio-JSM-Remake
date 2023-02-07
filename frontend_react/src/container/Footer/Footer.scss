@@ -7,6 +7,9 @@
     @media screen and (max-width: 768px) {
       flex-direction: column;
     }
+    @media screen and (min-width: 2000px) {
+      padding-top: 2rem;
+    }
   }
   
   .app__footer-cards {

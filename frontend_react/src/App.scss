@@ -115,7 +115,7 @@
     line-height: 1.5;
   
     @media screen and (min-width: 2000px) {
-      font-size: 1.75rem;
+      font-size: 1.1rem;
     }
   }
 
@@ -127,7 +127,7 @@
     line-height: 1.5;
   
     @media screen and (min-width: 2000px) {
-      font-size: 1.75rem;
+      font-size: 1.2rem;
     }
   }
 
@@ -164,7 +164,7 @@
     line-height: 1.5;
   
     @media screen and (min-width: 2000px) {
-      font-size: 1.75rem;
+      font-size: 1.2rem;
     }
   }
 
@@ -175,7 +175,7 @@
     line-height: 1.5;
   
     @media screen and (min-width: 2000px) {
-      font-size: 1.75rem;
+      font-size: 1.4rem;
     }
   }
   
@@ -186,7 +186,7 @@
     text-align: center;
   
     @media screen and (min-width: 2000px) {
-      font-size: 2rem;
+      font-size: 1.8rem;
     }
   
     @media screen and (max-width: 450px) {
@@ -201,7 +201,7 @@
     text-align: center;
   
     @media screen and (min-width: 2000px) {
-      font-size: 2rem;
+      font-size: 1.6rem;
     }
   
     @media screen and (max-width: 450px) {
@@ -265,8 +265,11 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-  
-    padding: 1rem;
+    position: fixed;  
+    right: 0rem;
+    bottom: 45%;
+    // padding: 1rem;
+
   
     .app__navigation-dot {
       width: 10px;
