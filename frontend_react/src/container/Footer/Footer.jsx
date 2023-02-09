@@ -5,6 +5,9 @@ import { AppWrap, MotionWrap } from '../../wrapper';
 import { client } from '../../client';
 import './Footer.scss';
 
+import { BsInstagram } from 'react-icons/bs';
+import { FaLinkedin, FaGithub } from 'react-icons/fa';
+
 const Footer = () => {
   const [formData, setFormData] = useState({ name: '', email: '', message: '' });
   const [isFormSubmitted, setIsFormSubmitted] = useState(false);
@@ -44,10 +47,26 @@ const Footer = () => {
           <img src={images.email} alt="email" />
           <a href="mailto:fernando@olivo.dev" className="p-text">fernando@olivo.dev</a>
         </div>
-        {/* <div className="app__footer-card">
-          <img src={images.mobile} alt="phone" />
-          <a href="tel:+1 (123) 456-7890" className="p-text">+1 (123) 456-7890</a>
-        </div> */}
+      </div>
+      
+      <div className="app__social-cards">
+        {/* <img src={images.mobile} alt="phone" />
+        <a href="tel:+1 (123) 456-7890" className="p-text">+1 (123) 456-7890</a> */}
+        <div>
+          <a href="https://github.com/fjolivo/" target="_blank">
+            <FaGithub />
+          </a>
+        </div>
+        <div>
+          <a href="https://www.linkedin.com/in/fjolivo/" target="_blank">
+            <FaLinkedin />
+          </a>
+        </div>
+        <div>
+          <a href="https://www.instagram.com/fjolivo/" target="_blank">
+            <BsInstagram />
+          </a>
+        </div>
       </div>
       {!isFormSubmitted ? (
         <div className="app__footer-form app__flex">
