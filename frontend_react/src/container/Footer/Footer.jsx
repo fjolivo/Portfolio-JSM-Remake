@@ -49,7 +49,7 @@ const Footer = () => {
         </div>
       </div>
       
-      <div className="app__social-cards app__flex">
+      <div className="app__social-cards">
 
         <div className="app__social-card app__margin-right">
           <a href="https://github.com/fjolivo/" target="_blank">
@@ -99,6 +99,10 @@ const Footer = () => {
           </h3>
         </div>
       )}
+      <div className="copyright">
+          <p className="p-text">2023 Fernando Olivo</p>
+          <p className="p-text">All rights reserved</p>
+        </div>
     </>
   );
 };
