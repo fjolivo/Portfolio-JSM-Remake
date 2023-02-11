@@ -1,6 +1,6 @@
 export default{
-    name:'abouts',
-    title:'Abouts',
+    name:'about',
+    title:'About',
     type: 'document',
     fields:[
         {
@@ -11,11 +11,21 @@ export default{
         {
             name:'description',
             title:'Description',
-            type:'string'
+            type:'text'
         },
         {
-            name:'imgUrl',
-            title:'ImgUrl',
+            name:'description2',
+            title:'Description2',
+            type:'text'
+        },
+        {
+            name:'description3',
+            title:'Description3',
+            type:'text'
+        },
+        {
+            name:'profileImg',
+            title:'ProfileImg',
             type: 'image',
             options: {
               hotspot: true,
@@ -23,4 +33,4 @@ export default{
         },
         
     ]
-}
+} 

@@ -2,9 +2,15 @@
     flex: 1;
     width: 100%;
     flex-direction: column;
+    padding-top: 0rem;
+    margin-bottom: 0rem;
+    padding-bottom: 0rem;
   
     @media screen and (max-width: 768px) {
       flex-direction: column;
+    }
+    @media screen and (min-width: 2000px) {
+      padding-top: 2rem;
     }
   }
   
@@ -14,7 +20,7 @@
     justify-content: space-evenly;
     align-items: center;
     flex-wrap: wrap;
-    margin: 4em 2rem 2rem;
+    margin: 3em 4rem 1rem;
   
     .app__footer-card {
       min-width: 290px;
@@ -55,6 +61,74 @@
   
     @media screen and (max-width: 768px) {
       width: 100%;
+    }
+  }
+
+
+  .app__social-cards {
+
+
+    // padding-top: 1rem;
+    display: flex;
+    // flex-basis: auto;
+    // flex-direction: row;
+    // justify-content: space-between;
+    // align-items: flex-start;
+    // justify-content: space-between;
+    width: 60%;
+    
+    justify-content: center;
+    align-items: center;
+   
+    //  justify-content: space-between;
+    //  align-items: center;
+    //  flex-wrap: wrap;     
+    
+    
+    .app__margin-right {
+      margin-right: 10%;
+    }
+    .app__social-card {
+      min-width: 85px;
+      padding: 1rem 0;
+      
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 33.33%;
+      flex-grow: 1;
+      
+      // margin: 0rem 1rem;
+      border-radius: 10px;
+      cursor: pointer;
+      background-color: var(--white-color);
+      // margin: 0.25rem 0;
+      // border: 1px solid var(--lightGray-color);
+      // justify-content: center;
+      // align-items: center;
+      // margin-left: 2rem;
+      // padding: 1rem;
+      
+      transition: all 0.3s ease-in-out;
+      
+      &:hover {
+        box-shadow: 0 0 25px #fef4f5;
+      }
+
+      svg {
+        width: 17px;
+        height: 17px;
+        color: var(--black-color2);
+      }
+
+      // &:hover {
+      //   background-color: var(--secondary-color);
+      //   border-color: var(--secondary-color);
+      // }
+    }
+    @media screen and (min-width: 500px) {
+      display: none;
     }
   }
   
@@ -109,8 +183,8 @@
       border: none;
       background-color: var(--secondary-color);
   
-      font-weight: 500;
-      color: var(--white-color);
+      font-weight: 800;
+      color: var(--black-color2);
       outline: none;
       margin: 2rem 0 0 0;
       font-family: var(--font-base);
@@ -119,7 +193,10 @@
       cursor: pointer;
   
       &:hover {
-        background-color: #2430af;
+        transition: all 0.3s ease-in-out;
+        // transition-delay: 600ms;
+        // background-color: #99ff00;
+        box-shadow: 0 0 70px #fef4f5;
       }
     }
   

@@ -31,16 +31,16 @@
     flex: 1;
     width: 100%;
     flex-direction: column;
-    padding: 4rem 2rem;
+    padding: 4rem 2rem 1rem;
   
     @media screen and (max-width: 450px) {
-      padding: 4rem 1rem 2rem;
+      padding: 4rem 1rem 1rem;
     }
   }
   
   .copyright {
     width: 100%;
-    padding: 2rem 0 0;
+    // padding: 2rem 0 0;
   
     display: flex;
     flex-direction: column;
@@ -53,26 +53,7 @@
     }
   }
   
-  .head-text2 {
-    font-size: 5.5rem;
-    font-weight: 800;
-    text-align: center;
-    color: var(--yellow-color);
-    text-transform: capitalize;
   
-    span {
-      color: var(--secondary-color);
-    }
-  
-    @media screen and (min-width: 2000px) {
-      font-size: 4rem;
-    }
-  
-    @media screen and (max-width: 450px) {
-      font-size: 2rem;
-    }
-  }
-
   .head-text {
     font-size: 2.75rem;
     font-weight: 800;
@@ -92,18 +73,53 @@
       font-size: 2rem;
     }
   }
+  
+  .head-text2 {
+    font-size: 5.5rem;
+    font-weight: 800;
+    text-align: center;
+    color: var(--yellow-color);
+    text-transform: capitalize;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  
+    span {
+      color: var(--secondary-color);
+    }
+  
+    @media screen and (min-width: 1300px) {
+      font-size: 7.2rem;
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+    }
 
-  .p-text2 {
-    font-size: 1.3rem;
+    @media screen and (max-width: 850px) {
+      font-size: 4rem;
+    }
+  
+    @media screen and (max-width: 450px) {
+      font-size: 2.5rem;
+    }
+
+    @media screen and (min-width: 3100px) {
+      font-size: 13rem;
+      padding-top: 2rem;
+      padding-bottom: 2rem;
+    }
+  }
+  
+  .p-text-tag {
+    font-size: 0.7rem;
     text-align: left;
-    color: var(--lightGray-color);
+    color: var(--gray-color);
     line-height: 1.5;
   
     @media screen and (min-width: 2000px) {
-      font-size: 1.75rem;
+      font-size: 1.1rem;
     }
   }
 
+  
   .p-text {
     font-size: 0.8rem;
     text-align: left;
@@ -111,18 +127,66 @@
     line-height: 1.5;
   
     @media screen and (min-width: 2000px) {
+      font-size: 1.2rem;
+    }
+  }
+
+  .p-text2 {
+    font-size: 1.3rem;
+    text-align: left;
+    color: var(--lightGray-color);
+    line-height: 1.5;
+  
+    @media screen and (min-width: 1300px) {
       font-size: 1.75rem;
+    }
+
+    @media screen and (min-width: 3100px) {
+      font-size: 4rem;
+    }
+  }
+
+  .p-text3 {
+    font-size: 0.8rem;
+    text-align: left;
+    // color: rgb(0, 0, 25);
+    line-height: 1.5;
+  
+    @media screen and (min-width: 2000px) {
+      font-size: 1.75rem;
+    }
+  }
+
+  .p-text4 {
+    font-size: 0.8rem;
+    text-align: left;
+    color: var(--black-color2);
+    line-height: 1.5;
+  
+    @media screen and (min-width: 2000px) {
+      font-size: 1.2rem;
+    }
+  }
+
+  .p-text5 {
+    font-size: 0.9rem;
+    text-align: left;
+    color: var(--lightGray-color);
+    line-height: 1.5;
+  
+    @media screen and (min-width: 2000px) {
+      font-size: 1.4rem;
     }
   }
   
   .bold-text {
     font-size: 1rem;
     font-weight: 800;
-    color: var(--black-color);
-    text-align: left;
+    color: var(--white-color);
+    text-align: center;
   
     @media screen and (min-width: 2000px) {
-      font-size: 2rem;
+      font-size: 1.8rem;
     }
   
     @media screen and (max-width: 450px) {
@@ -130,41 +194,65 @@
     }
   }
   
+  .bold-text-work {
+    font-size: 1.2rem;
+    font-weight: 800;
+    color: var(--brown-color);
+    text-align: center;
+  
+    @media screen and (min-width: 2000px) {
+      font-size: 1.6rem;
+    }
+  
+    @media screen and (max-width: 450px) {
+      font-size: 0.9rem;
+    }
+  }
+
   .app__social {
     display: flex;
-    justify-content: flex-end;
-    align-items: center;
+    //justify-content: flex-start;
+    align-items: flex-end;
     flex-direction: column;
-  
-    padding: 1rem;
+    //margin-bottom: 3rem;
+    //padding: 1rem;
+    // margin-top: 1rem;
+    bottom: 1rem;
+    left: 1rem;
+    position: fixed;
+    // margin-bottom: 1rem;
   
     div {
       width: 40px;
       height: 40px;
       border-radius: 50%;
       background-color: var(--white-color);
-      margin: 0.25rem 0;
+      // margin: 0.25rem 0;
       border: 1px solid var(--lightGray-color);
-  
+      
       display: flex;
       justify-content: center;
       align-items: center;
+      
+      padding: 1rem;
+
+      margin-bottom: 0.5rem;
   
       transition: all 0.3s ease-in-out;
+
+      // position: fixed;
   
       svg {
-        width: 15px;
-        height: 15px;
-        color: var(--gray-color);
+        width: 16px;
+        height: 16px;
+        color: var(--black-color2);
       }
   
       &:hover {
         background-color: var(--secondary-color);
         border-color: var(--secondary-color);
   
-        svg {
-          color: var(--white-color);
-        }
+
       }
   
       @media screen and (min-width: 2000px) {
@@ -181,36 +269,39 @@
     }
   }
   
-  .app__navigation {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+  // .app__navigation {
+  //   display: flex;
+  //   justify-content: center;
+  //   align-items: center;
+  //   flex-direction: column;
+  //   position: fixed;  
+  //   right: 0rem;
+  //   bottom: 45%;
+  //   // padding: 1rem;
+
   
-    padding: 1rem;
+  //   .app__navigation-dot {
+  //     width: 10px;
+  //     height: 10px;
+  //     border-radius: 50%;
+  //     background-color: #cbcbcb;
+  //     margin: 0.5rem;
   
-    .app__navigation-dot {
-      width: 10px;
-      height: 10px;
-      border-radius: 50%;
-      background-color: #cbcbcb;
-      margin: 0.5rem;
+  //     transition: background-color 0.2s ease-in-out;
   
-      transition: background-color 0.2s ease-in-out;
+  //     &:hover {
+  //       background-color: var(--secondary-color);
+  //     }
   
-      &:hover {
-        background-color: var(--secondary-color);
-      }
-  
-      @media screen and (min-width: 2000px) {
-        width: 20px;
-        height: 20px;
-      }
-    }
-  }
+  //     @media screen and (min-width: 2000px) {
+  //       width: 20px;
+  //       height: 20px;
+  //     }
+  //   }
+  // }
   
   @media screen and (max-width: 500px) {
-    .app__navigation,
+    // .app__navigation,
     .app__social {
       display: none;
     }

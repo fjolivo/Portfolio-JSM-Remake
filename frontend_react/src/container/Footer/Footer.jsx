@@ -5,11 +5,14 @@ import { AppWrap, MotionWrap } from '../../wrapper';
 import { client } from '../../client';
 import './Footer.scss';
 
+import { BsInstagram } from 'react-icons/bs';
+import { FaLinkedin, FaGithub } from 'react-icons/fa';
+
 const Footer = () => {
   const [formData, setFormData] = useState({ name: '', email: '', message: '' });
   const [isFormSubmitted, setIsFormSubmitted] = useState(false);
   const [loading, setLoading] = useState(false);
-
+ 
   const { username, email, message } = formData;
 
   const handleChangeInput = (e) => {
@@ -37,17 +40,38 @@ const Footer = () => {
 
   return (
     <>
-      <h2 className="head-text">Take a coffee & chat with me</h2>
+      <h2 className="head-text">Take a <span>coffee & chat</span> with me</h2>
 
       <div className="app__footer-cards">
         <div className="app__footer-card ">
           <img src={images.email} alt="email" />
-          <a href="mailto:hello@micael.com" className="p-text">hello@micael.com</a>
+          <a href="mailto:fernando@olivo.dev" className="p-text">fernando@olivo.dev</a>
         </div>
-        <div className="app__footer-card">
-          <img src={images.mobile} alt="phone" />
-          <a href="tel:+1 (123) 456-7890" className="p-text">+1 (123) 456-7890</a>
+      </div>
+      
+      <div className="app__social-cards">
+
+        <div className="app__social-card app__margin-right">
+          <a href="https://github.com/fjolivo/" target="_blank">
+            <FaGithub />
+          </a>
+          <a className="p-text3">GitHub</a>
         </div>
+
+        <div className="app__social-card app__margin-right">
+          <a href="https://www.linkedin.com/in/fjolivo/" target="_blank">
+            <FaLinkedin />
+          </a>
+          <a className="p-text3">LinkedIn</a>
+        </div>
+
+        <div className="app__social-card">
+          <a href="https://www.instagram.com/fjolivo/" target="_blank">
+            <BsInstagram />
+          </a>
+          <a className="p-text3">Instagram</a>
+        </div>
+
       </div>
       {!isFormSubmitted ? (
         <div className="app__footer-form app__flex">
@@ -66,7 +90,7 @@ const Footer = () => {
               onChange={handleChangeInput}
             />
           </div>
-          <button type="button" className="p-text" onClick={handleSubmit}>{!loading ? 'Send Message' : 'Sending...'}</button>
+          <button type="button" className="p-text3" onClick={handleSubmit}>{!loading ? 'Send Message' : 'Sending...'}</button>
         </div>
       ) : (
         <div>
@@ -75,6 +99,10 @@ const Footer = () => {
           </h3>
         </div>
       )}
+      <div className="copyright">
+          <p className="p-text">2023 Fernando Olivo</p>
+          <p className="p-text">All rights reserved</p>
+        </div>
     </>
   );
 };
