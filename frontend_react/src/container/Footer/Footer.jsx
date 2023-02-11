@@ -49,24 +49,29 @@ const Footer = () => {
         </div>
       </div>
       
-      <div className="app__social-cards">
-        {/* <img src={images.mobile} alt="phone" />
-        <a href="tel:+1 (123) 456-7890" className="p-text">+1 (123) 456-7890</a> */}
-        <div>
+      <div className="app__social-cards app__flex">
+
+        <div className="app__social-card app__margin-right">
           <a href="https://github.com/fjolivo/" target="_blank">
             <FaGithub />
           </a>
+          <a className="p-text3">GitHub</a>
         </div>
-        <div>
+
+        <div className="app__social-card app__margin-right">
           <a href="https://www.linkedin.com/in/fjolivo/" target="_blank">
             <FaLinkedin />
           </a>
+          <a className="p-text3">LinkedIn</a>
         </div>
-        <div>
+
+        <div className="app__social-card">
           <a href="https://www.instagram.com/fjolivo/" target="_blank">
             <BsInstagram />
           </a>
+          <a className="p-text3">Instagram</a>
         </div>
+
       </div>
       {!isFormSubmitted ? (
         <div className="app__footer-form app__flex">
