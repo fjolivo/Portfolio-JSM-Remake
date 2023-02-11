@@ -136,8 +136,12 @@ class StarrySky extends React.Component {
         </div>
       </div>
     );
-  }
-}
+  };
+};
+
+window.onresize = function() {
+  window.location.reload(false);
+};
 
 
 // const rootElement2 = (<StarrySky />, document.getElementById("root"));
@@ -154,6 +158,8 @@ class StarrySky extends React.Component {
 
 const rootElement = (<App />, document.getElementById('root'));
 const root = createRoot(rootElement);
+
+
 
 root.render(
   <StrictMode>
