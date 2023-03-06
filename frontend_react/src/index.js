@@ -139,9 +139,9 @@ class StarrySky extends React.Component {
   };
 };
 
-window.onresize = function() {
-  window.location.reload(false);
-};
+// window.onresize = function() {
+//   window.location.reload(false);
+// };
 
 
 // const rootElement2 = (<StarrySky />, document.getElementById("root"));
