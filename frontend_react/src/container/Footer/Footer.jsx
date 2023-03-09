@@ -94,7 +94,7 @@ const Footer = () => {
         </div>
       ) : (
         <div>
-          <h3 className="head-text">
+          <h3 className="head-text" style={{padding: '6rem 0'}}>
             Thank you for getting in touch!
           </h3>
         </div>
